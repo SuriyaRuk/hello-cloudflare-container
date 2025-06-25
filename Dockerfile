@@ -6,7 +6,7 @@
 # ARG TARGETPLATFORM is an automatic variable provided by Docker buildx.
 # It will be 'linux/amd64' or 'linux/arm64' depending on the --platform flag.
 # We are setting a default value for builds that don't use the --platform flag.
-ARG TARGETPLATFORM=linux/arm64
+ARG TARGETPLATFORM=linux/amd64
 
 # Use a builder image with Rust installed.
 FROM rust:1-alpine AS build
